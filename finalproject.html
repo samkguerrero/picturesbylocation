@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Final Project</title>
+
+    <link rel='stylesheet' href='css/finalproject.css' />
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+    <link href='css/googlecss' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  </head>
+  <body>
+
+    <img src="img/Flickr_logo.png" alt="flickr" height="50px" width="150px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <h2>Select size of photos (in pixels) you want them to be displayed.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="sq">Square[75X75]</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="lg-sq">Large Square[150X150]</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="thumb">Thumbnail</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="small">Small</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="mid">Medium</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="ori">Original</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        <h2>Jump to a city.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="losangeles">Los Angeles</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="seattle">Seattle</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="newyork">New York</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="sanfrancisco">San Francisco</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="portland">Portland</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="washingtondc">Washington DC</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        <h2>Select a topic for the photos.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="dogs">Dogs</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="shopping">Shopping</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="night">Night</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="building">Building</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="food">Food</button>
+        </div>
+        <div class="col-md-2">
+        <button type="button" class="btn btn-primary" id="random">Random</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        <h2>Input a topic.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <input type="text" id="userinput" value='' style="margin-left:10px">
+        <button type="button" class="btn btn-primary" id="settopic">Set Topic</button>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        <h2>Select Number of images you want.</h2>
+        </div>
+      </div>
+      <div class="row">
+        <select id="pagenumbers" name="pagenums" style="margin-left:10px;">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        <h2>Click a point on the map to fetch photos.</h2>
+        <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+      </div>
+    </div>
+
+    <img src="img/Leaflet_logo.svg.png" alt="leaflet" height="50px" width="150px" style="margin:10px;">
+    <div id="map">
+      <ul class='mediband' id='timeline'>
+        <div id="rightarrow" class="arrow-right"></div>
+        <div id="results"></div>
+      </ul>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src='js/mapbox.js'></script>
+    <script src="js/07d36eac3e.js"></script>
+    <script src="js/esri-leaflet.js"></script>
+    <script type="text/javascript" src="js/finalproject.js"></script>
+
+  </body>
+</html>

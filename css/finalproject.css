@@ -1,0 +1,75 @@
+body {
+  padding: 50px;
+  padding-top: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.2;
+}
+
+#pagenumbers {
+  background-color: #428bca;
+  color: #fff;
+  padding: 5px;
+}
+#pagenumbers:hover{
+  background-color: black;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #428bca;
+}
+.arrow-right:hover {
+  border-left: 20px solid green;
+}
+
+#sq,#lg-sq,#thumb,#small,#mid,#ori {
+width: 100%
+}
+
+#map {
+  position:top-right;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+  height:800px;
+  width:100%;
+  z-index:0;
+}
+#timeline {
+    position:absolute;
+    top:0; right:0;
+    bottom:0;
+    overflow-x:auto;
+    margin:0;
+    padding:15px;
+    z-index: 1;
+    background-color: #000;
+    list-style-type: none;
+    text-align: center;
+    color:#FFF;
+    font-size: 24px;
+    transition-property: all;
+  	transition-duration: 1s;
+  	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;  /* for vertical scrollbars */
+  height: 20px; /* for horizontal scrollbars */
+}
+::-webkit-scrollbar-track
+{
+  background: #FFF;
+}
+::-webkit-scrollbar-thumb
+{
+  background: #428bca;
+}
