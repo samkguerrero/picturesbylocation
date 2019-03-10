@@ -9,3 +9,5 @@ by clicking on a location on a map.
 
 See the demo here:
 https://samkguerrero.github.io/picturesbylocation/finalproject.html
+
+![alt text](https://github.com/samkguerrero/picturesbylocation/blob/master/img/picbylocationscreencap.png)
